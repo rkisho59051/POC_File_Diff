@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SampleDataComponent } from './components/sample-data/sample-data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
+import { NgxTextDiffModule } from 'ngx-text-diff';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    NgxTextDiffModule
   ],
   entryComponents:[
     AppComponent,

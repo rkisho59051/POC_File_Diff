@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DiffContent, DiffResults } from 'ngx-text-diff/lib/ngx-text-diff.model';
 
 @Component({
   selector: 'app-sample-data',
@@ -6,14 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sample-data.component.scss']
 })
 export class SampleDataComponent implements OnInit {
-  person1:any={
+ show = false;
+  previous:any={
     "Firstname":"John",
     "Lastname":"McMohan",
     "EmpCode":"A001",
     "City":"London",
     "Salary":"10000"
   }
-  person2:any={
+  next:any={
     "Firstname":"Albert",
     "Lastname":"McMohan",
     "EmpCode":"A002",
@@ -25,6 +27,18 @@ export class SampleDataComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  diffCheck(){
+    if(this.show == true){
+      this.show = false;
+    } else if(this.show == false) { this.show = true;}
+    
+  }
+  onCompareResults(diffResults: DiffResults) {
+    console.log('diffResults', diffResults);
+    
+  }
+
+
 
 
 }
