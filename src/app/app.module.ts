@@ -7,7 +7,7 @@ import { SampleDataComponent } from './components/sample-data/sample-data.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { NgxTextDiffModule } from 'ngx-text-diff';
-
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { NgxTextDiffModule } from 'ngx-text-diff';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    NgxTextDiffModule
+    NgxTextDiffModule,
+    ScrollingModule
   ],
   entryComponents:[
     AppComponent,

@@ -13,14 +13,26 @@ export class SampleDataComponent implements OnInit {
     "Lastname":"McMohan",
     "EmpCode":"A001",
     "City":"London",
-    "Salary":"10000"
+    "Salary":"10000",
+    "Car":"Ferrari",
+    "Bike":"HondaCBR750",
+    "Contact":"9999988888",
+    "School":"KV",
+    "Friend":"Jenny",
+    "OldBuddy":"Mark"
   }
   next:any={
     "Firstname":"Albert",
     "Lastname":"McMohan",
     "EmpCode":"A002",
     "City":"Amsterdam",
-    "Salary":"20000"
+    "Salary":"20000",
+    "Car":"HondaCity",
+    "Bike":"BMWX600",
+    "Contact":"9999988888",
+    "School":"KV2",
+    "Friend":"Jenny",
+    "OldBuddy":"Mark2"
   }
 
   constructor() { }

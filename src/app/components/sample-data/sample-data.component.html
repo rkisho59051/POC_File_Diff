@@ -20,6 +20,6 @@
 </div>
 </div>
 <div *ngIf="show">
-<td-ngx-text-diff [left]="previous | json" [right]="next | json" (compareResults)="onCompareResults($event)"></td-ngx-text-diff>
+<td-ngx-text-diff [left]="previous | json " [right]="next | json" synchronizeScrolling (compareResults)="onCompareResults($event)"></td-ngx-text-diff>
 </div>
 </div></h2>
